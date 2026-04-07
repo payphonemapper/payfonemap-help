@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to change the user language - Help Center</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        .hero {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Article Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 4rem 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #003d82;
+        }
+
+        .article-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: #111;
+            line-height: 1.2;
+        }
+
+        .article-section {
+            margin-top: 2.5rem;
+        }
+
+        .article-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #0056b3;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-section p {
+            margin-bottom: 1rem;
+        }
+
+        /* Typography & Content Formatting */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: #444;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Language Button List Styling */
+        .language-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            list-style: none;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        .language-item {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: #334155;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .article-card {
+                padding: 25px;
+            }
+            .article-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Fonectrix Help</h1>
+    </header>
+
+    <main class="container">
+        <!-- Back button to return to the Fonectrix Help category -->
+        <a href="fonectrix-help.html" class="back-link">← Back to Fonectrix Help</a>
+        
+        <article class="article-card">
+            <h1 class="article-title">How to change the user language</h1>
+            
+            <section class="article-section" style="margin-top: 0;">
+                <h2>Changing the interface language</h2>
+                <p>To personalize your experience, Fonectrix offers several regional language options. Follow these steps to update your settings:</p>
+                
+                <ol>
+                    <li>Visit <a href="https://www.fonectrix.info" target="_blank" rel="noopener noreferrer">www.fonectrix.info</a> and be sure you are on the <strong>Index</strong> page.</li>
+                    <li>Click on <strong>SETTINGS</strong> at the top of the page.</li>
+                    <li>In the <strong>Application Settings</strong> area, look for the <strong>Regional Language</strong> option.</li>
+                    <li>Choose from one of the available language buttons:</li>
+                </ol>
+
+                <ul class="language-list">
+                    <li class="language-item">English (default)</li>
+                    <li class="language-item">Français (CA)</li>
+                    <li class="language-item">Português</li>
+                    <li class="language-item">繁體中文</li>
+                    <li class="language-item">한국어 (Korean)</li>
+                    <li class="language-item">Русский (Russian)</li>
+                </ul>
+
+                <p>Upon choosing your desired language, the website interface will automatically update to reflect your selection.</p>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>

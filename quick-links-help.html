@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting from the Quick Links - Help Center</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        .hero {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Article Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 4rem 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #003d82;
+        }
+
+        .article-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: #111;
+            line-height: 1.2;
+        }
+
+        .article-section {
+            margin-top: 2.5rem;
+        }
+
+        .article-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #0056b3;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-section h3 {
+            font-size: 1.15rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        .article-section p {
+            margin-bottom: 1rem;
+        }
+
+        /* Typography & Content Formatting */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: #444;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Callout Notes */
+        .note-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .note-box strong {
+            color: #b28600;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+
+        .action-button {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white !important;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            text-decoration: none !important;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .action-button:hover {
+            background-color: #003d82;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .article-card {
+                padding: 25px;
+            }
+            .article-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Website Help</h1>
+    </header>
+
+    <main class="container">
+        <!-- Back button to return to the Website Help category -->
+        <a href="website-help.html" class="back-link">← Back to Website Help</a>
+        
+        <article class="article-card">
+            <h1 class="article-title">Selecting from the Quick Links</h1>
+            
+            <section class="article-section" style="margin-top: 0;">
+                <h2>One-Click Easy Access</h2>
+                <p>The Quick Links are designed to provide an express, one-click access to the site's most essential tools and resources for users who want to contribute, explore, get help, or support the project.</p>
+                
+                <div class="note-box">
+                    <strong>*NOTE:</strong> Actual Quick Links may differ from this diagram.
+                </div>
+
+                <h3>📶 Payphone Manager</h3>
+                <p>The Payphone Manager is the central crowdsourcing hub on PayFoneMap.com—the main tool where anyone can help build and maintain the global map of remaining public payphones.</p>
+                
+                <h3>🆘 Help</h3>
+                <p>Get support from our Help Centre and the most frequently asked questions.</p>
+
+                <h3>🖼️ Gallery</h3>
+                <p>The gallery is a curated showcase of standout payphone photographs taken by our team.</p>
+
+                <h3>📊 Statistics</h3>
+                <div class="note-box">
+                    <div><strong>*NOTE:</strong> On March 10, 2026, the PayFoneMap Stats page was migrated to a simple, mobile-friendly, booth search tool called Fonectrix.</div>
+                    <div style="text-align: right; margin-top: 10px;">
+                        <a href="https://fonectrix.info" class="action-button" target="_blank" rel="noopener noreferrer">Visit Fonectrix</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>

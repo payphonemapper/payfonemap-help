@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to check if the website is down - Help Center</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        .hero {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Article Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 4rem 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #003d82;
+        }
+
+        .article-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: #111;
+            line-height: 1.2;
+        }
+
+        .article-section {
+            margin-top: 2.5rem;
+        }
+
+        .article-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #0056b3;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-section p {
+            margin-bottom: 1rem;
+        }
+
+        /* Typography & Content Formatting */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: #444;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Callout Notes */
+        .note-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .note-box strong {
+            color: #b28600;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+
+        /* Status Colors */
+        .status-yellow {
+            color: #d97706; /* Dark yellow/amber for readability */
+            font-weight: 700;
+        }
+        
+        .status-green {
+            color: #2e7d32;
+            font-weight: 700;
+        }
+        
+        .status-red {
+            color: #c62828;
+            font-weight: 700;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .article-card {
+                padding: 25px;
+            }
+            .article-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Website Help</h1>
+    </header>
+
+    <main class="container">
+        <!-- Back button to return to the Website Help category -->
+        <a href="website-help.html" class="back-link">← Back to Website Help</a>
+        
+        <article class="article-card">
+            <h1 class="article-title">How to check if the website is down</h1>
+            
+            <section class="article-section" style="margin-top: 0;">
+                <h2>Checking status of the website</h2>
+                <p>To review any reported outages for any services, you must be connected to an Internet connection to begin.</p>
+                
+                <div class="note-box">
+                    <strong>*NOTE:</strong> If certain services are down due to regular maintenance, we do not report such to our outage tool.
+                </div>
+
+                <ol>
+                    <li>Go to <a href="https://cognitostat.info" target="_blank" rel="noopener noreferrer">cognitostat.info</a></li>
+                    <li>Under the <strong>PayFoneMap</strong> section, review the colour/phrase indicating the current status of each of our services.</li>
+                </ol>
+
+                <ul>
+                    <li><span class="status-yellow">Checking</span> = updating current status (Yellow)</li>
+                    <li><span class="status-green">NORMAL</span> = service is operating normally (Green)</li>
+                    <li><span class="status-red">DOWN</span> = service(s) are currently unavailable (Red)</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>

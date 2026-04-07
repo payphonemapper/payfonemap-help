@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is the Booth ID? - Help Center</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        .hero {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Article Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 4rem 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #003d82;
+        }
+
+        .article-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: #111;
+            line-height: 1.2;
+        }
+
+        .article-section {
+            margin-top: 2.5rem;
+        }
+
+        .article-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #0056b3;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-section h3 {
+            font-size: 1.15rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        .article-section p {
+            margin-bottom: 1rem;
+        }
+
+        /* Typography & Content Formatting */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: #444;
+        }
+
+        /* Callout Notes */
+        .note-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .note-box strong {
+            color: #b28600;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+
+        .format-display {
+            background-color: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 20px 0;
+            color: #1e293b;
+            border: 1px dashed #cbd5e1;
+        }
+
+        /* City Code Grid - Fixed columns for alignment */
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            list-style: none;
+            margin-left: 0;
+            padding: 0;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .city-grid li {
+            padding: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .article-card {
+                padding: 25px;
+            }
+            .article-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Fonectrix Help</h1>
+    </header>
+
+    <main class="container">
+        <!-- Back button to return to the Fonectrix Help category -->
+        <a href="fonectrix-help.html" class="back-link">← Back to Fonectrix Help</a>
+        
+        <article class="article-card">
+            <h1 class="article-title">What is the Booth ID?</h1>
+            
+            <section class="article-section" style="margin-top: 0;">
+                <h2>Booth ID Format</h2>
+                <p>Every Booth ID follows a standardized structure to ensure uniqueness across the global database:</p>
+                
+                <div class="format-display">
+                    XX-YY-ZZZ-NNNNN
+                </div>
+
+                <ul>
+                    <li><strong>XX</strong> = Country code (2 uppercase letters)</li>
+                    <li><strong>YY</strong> = Province/region code (2 uppercase letters)</li>
+                    <li><strong>ZZZ</strong> = City/area/municipality code (3 uppercase letters)</li>
+                    <li><strong>NNNNN</strong> = Unique 5-digit numeric identifier</li>
+                </ul>
+            </section>
+
+            <section class="article-section">
+                <h2>Detailed Breakdown of Each Part</h2>
+                
+                <h3>Country Code (XX – first 2 letters)</h3>
+                <p>Identifies the country where the booth is located.</p>
+                <ul>
+                    <li>For all Canadian booths (including Quebec): <strong>CA</strong> (Canada)</li>
+                    <li>Other examples: <strong>BR</strong> (Brazil), <strong>NZ</strong> (New Zealand), <strong>FR</strong> (France), etc.</li>
+                </ul>
+
+                <h3>Province/Region Code (YY – next 2 letters)</h3>
+                <p>Identifies the province, state, or equivalent administrative region.</p>
+                <ul>
+                    <li><strong>In Canada:</strong> Standard 2-letter postal abbreviations (e.g., <strong>QC</strong> for Québec, <strong>ON</strong> for Ontario, <strong>AB</strong> for Alberta).</li>
+                </ul>
+
+                <h3>City/Area Code (ZZZ – next 3 letters)</h3>
+                <p>A 3-letter abbreviation derived from the city, town, or local area name. Common Quebec examples include:</p>
+                
+                <ul class="city-grid">
+                    <li><strong>MON</strong> = Montréal</li>
+                    <li><strong>GAT</strong> = Gatineau</li>
+                    <li><strong>QUE</strong> = Québec City</li>
+                    <li><strong>JOL</strong> = Joliette</li>
+                    <li><strong>LEV</strong> = Lévis</li>
+                    <li><strong>BRO</strong> = Brossard</li>
+                    <!-- BEL is now centered below SEP -->
+                    <li><strong>SEP</strong> = Sept-Îles</li>
+                    <!-- STM is now centered below FER -->
+                    <li><strong>FER</strong> = Fermont</li>
+                    <li><strong>BEL</strong> = Beloeil</li>
+                    <li><strong>STM</strong> = Ste-Marie-Madeleine</li>
+                </ul>
+
+                <h3>Numeric Identifier (NNNNN – last 5 digits)</h3>
+                <p>A sequential or assigned 5-digit number that distinguishes each individual booth within the same city or local area code.</p>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>

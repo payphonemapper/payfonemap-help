@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Search Section */
+        .hero {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            outline: none;
+        }
+
+        /* Tile Grid System */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .tile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding-bottom: 4rem;
+        }
+
+        /* Individual Tile Styling */
+        .tile {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eaeaea;
+        }
+
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #0056b3;
+        }
+
+        .tile-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .tile-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .tile-description {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>How can we help you?</h1>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search for articles, guides, or FAQs...">
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="tile-grid">
+            <!-- Tile 1 -->
+            <a href="https://payfonemap.com/faqs" class="tile">
+                <div class="tile-icon">❓</div>
+                <h2 class="tile-title">FAQs</h2>
+                <p class="tile-description">Find quick answers to the most frequently asked questions.</p>
+            </a>
+
+            <!-- Tile 2 -->
+            <a href="payphone-help.html" class="tile">
+                <div class="tile-icon">☎️</div>
+                <h2 class="tile-title">Payphone Help</h2>
+                <p class="tile-description">Get assistance with our public payphone network and services.</p>
+            </a>
+
+            <!-- Tile 3 -->
+            <a href="submission-help.html" class="tile">
+                <div class="tile-icon">📤</div>
+                <h2 class="tile-title">Submission Help</h2>
+                <p class="tile-description">Learn how to successfully submit your content, forms, or applications.</p>
+            </a>
+
+            <!-- Tile 4 -->
+            <a href="website-help.html" class="tile">
+                <div class="tile-icon">🌐</div>
+                <h2 class="tile-title">Website Help</h2>
+                <p class="tile-description">Troubleshoot website navigation, account access, and technical errors.</p>
+            </a>
+
+            <!-- Tile 5 -->
+            <a href="games-help.html" class="tile">
+                <div class="tile-icon">🎮</div>
+                <h2 class="tile-title">Games Help</h2>
+                <p class="tile-description">Support for in-game issues, purchases, bugs, and account syncing.</p>
+            </a>
+
+            <!-- Tile 6 -->
+            <a href="fonectrix-help.html" class="tile">
+                <div class="tile-icon">🔌</div>
+                <h2 class="tile-title">Fonectrix Help</h2>
+                <p class="tile-description">Get specialized support for all Fonectrix products, devices, and integrations.</p>
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
