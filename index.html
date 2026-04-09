@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Center</title>
@@ -20,7 +19,7 @@
             line-height: 1.6;
         }
 
-        /* Header & Search Section */
+        /* Header & Message Section */
         .hero {
             background-color: #0056b3;
             color: white;
@@ -34,20 +33,12 @@
             margin-bottom: 1rem;
         }
 
-        .search-container {
-            max-width: 600px;
+        .hero-message {
+            font-size: 1.2rem;
+            max-width: 700px;
             margin: 0 auto;
-            position: relative;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 15px 20px;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            outline: none;
+            opacity: 0.9;
+            font-weight: 400;
         }
 
         /* Tile Grid System */
@@ -105,9 +96,7 @@
 
     <header class="hero">
         <h1>How can we help you?</h1>
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search for articles, guides, or FAQs...">
-        </div>
+        <p class="hero-message">Welcome to our support hub. Please select a category below to find guides and assistance for our services.</p>
     </header>
 
     <main class="container">
