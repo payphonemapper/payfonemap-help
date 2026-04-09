@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - PayFoneMap Help</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        .hero {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 4rem 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #003d82;
+        }
+
+        /* Category Heading */
+        .category-heading {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            color: #111;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-small {
+            font-size: 0.85rem;
+            padding: 5px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid #0056b3;
+            transition: all 0.2s;
+        }
+
+        .btn-primary { background: #0056b3; color: white; }
+        .btn-outline { background: white; color: #0056b3; }
+        .btn-small:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        /* FAQ Item Styling */
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+            overflow: hidden;
+        }
+
+        .question-btn {
+            width: 100%;
+            padding: 20px;
+            text-align: left;
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #222;
+            transition: background 0.2s;
+        }
+
+        .question-btn:hover {
+            background-color: #fcfcfc;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+            color: #0056b3;
+        }
+
+        .answer-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #fff;
+        }
+
+        .answer-content {
+            padding: 0 20px 20px 20px;
+            color: #555;
+            border-top: 1px solid #f4f7f6;
+            padding-top: 15px;
+        }
+
+        .active .answer-container {
+            max-height: 1000px;
+        }
+
+        .active .icon {
+            transform: rotate(180deg);
+        }
+
+        /* Buttons within answers */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn-answer {
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+
+        .btn-answer-primary { background: #0056b3; color: white; }
+        .btn-answer-outline { border: 1px solid #0056b3; color: #0056b3; }
+
+        /* Typography */
+        a { color: #0056b3; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        ul { margin-left: 1.5rem; margin-top: 10px; }
+        li { margin-bottom: 8px; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .category-heading { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .btn-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find the answer to any support questions you may have.</p>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="back-link">← Back to Help Centre</a>
+
+        <!-- Payphones & Submissions -->
+        <h2 class="category-heading">Payphones & Submissions</h2>
+        
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>Where do you show payphones from?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Our project started in Canada but has expanded internationally. Check our <a href="https://www.payfonemap.com/find-a-phone" target="_blank">Find a Phone</a> page for current coverage.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>Can I submit a payphone location?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Yes! We welcome contributions. Please refer to our <a href="how-to-submit.html">Submission Help</a> guides to learn how to participate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>Why does the phone location not match?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Locations can be slightly inaccurate, especially in complex areas like airports, malls, or large government buildings. We rely on community reporting to refine these markers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>How do I submit a phone booth location?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Ensure the phone is functional, get the address/coordinates, and note the provider.</p>
+                    <ul>
+                        <li>Visit the <strong>Payphone Manager</strong> on PayFoneMap.com.</li>
+                        <li>Click "Add new phone" and enter the details.</li>
+                        <li>Including a photo helps us verify the submission faster.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>Do I have to submit it on the website?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>We prefer website submissions, but we also accept reports via our Subreddit (r/PayFoneMap). Note: Reddit submissions <strong>must</strong> include a photo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maps & Website -->
+        <h2 class="category-heading">Maps & Website</h2>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>Why are the maps/website not loading?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>This could be due to your connection, scheduled maintenance, or server issues. Check <a href="check-status.html">how to check our status</a> for more info.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>What if a phone booth is removed?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Report it using our <strong>Report a Booth</strong> tool so we can update the map. Providing a photo of the empty spot helps us confirm the removal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>Why are some regions incomplete?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Data collection varies by region. We cannot guarantee 100% coverage for every area, but we are constantly expanding with user help.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help & Safety -->
+        <h2 class="category-heading">Payphone Help & Safety</h2>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>How do I use a payphone?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Operation varies by provider. Choose a region below for specific instructions:</p>
+                    <div class="btn-group">
+                        <a href="https://www.payfonemap.com/payphone-help/how-to-use-a-payphone-in-canada" target="_blank" class="btn-answer btn-answer-primary">Canadian Payphones</a>
+                        <a href="https://www.payfonemap.com/payphone-help/how-to-use-a-payphone-in-japan" target="_blank" class="btn-answer btn-answer-outline">Japanese Payphones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>How can I be safe using a payphone?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Always stay aware of your surroundings. Use well-lit booths, keep your call brief, and use hand sanitizer. For more tips, see our <a href="payphone-safety.html">Safety Guide</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>What if I see a damaged payphone?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Report vandalism to local law enforcement or the phone operator. For your safety, <strong>do not use</strong> phones with exposed wires or broken receivers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subreddit -->
+        <h2 class="category-heading">Help with Subreddit</h2>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>What can be posted on the subreddit?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>You can post mapping data, new booth finds, photos, and project updates. Please keep discussions respectful and accurate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question-btn" onclick="toggleFaq(this)">
+                <span>Are photos required on subreddit submissions?</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="answer-container">
+                <div class="answer-content">
+                    <p>Yes. As of August 14, 2025, clear photos are mandatory for all Reddit booth submissions. Anonymous website submissions are exempt.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const wasActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+            if (!wasActive) item.classList.add('active');
+        }
+    </script>
+</body>
+</html>
